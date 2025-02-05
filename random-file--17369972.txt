@@ -1,0 +1,1 @@
+Student(1,John,Doe,List(Course(Spark), Course(Scala)))Student(2,Ivan,Ivanov,List(Course(Java)))Student(3,Jack,Toe,List(Course(Java), Course(Spark), Course(Scala)))

@@ -9,7 +9,7 @@ import scala.util.Random
 object SparkRDDAPI {
   def main(args: Array[String]): Unit = {
     println("Hello!")
-    /*
+
     // Создаём конекст исполнения
     val conf = new SparkConf().setAppName("SparkRDDAPI").setMaster("local")
     val sc   = new SparkContext(conf)
@@ -18,7 +18,7 @@ object SparkRDDAPI {
     val data                       = Seq("Spark", "Scala", "Java")
     val collectionRDD: RDD[String] = sc.parallelize(data, 2)
     val studentsRDD: RDD[Student]  = sc.parallelize(Student.getStudentsSample)
-    val fileRDD: RDD[String]       = sc.textFile(args(0))
+    val fileRDD: RDD[String]       = sc.textFile("C:\\Users\\corys\\IdeaProjects\\SparkDeveloperScala\\data")
 
     //2 - Операции
     println("Операции")
@@ -35,7 +35,7 @@ object SparkRDDAPI {
     println("\nMap")
     studentsRDD.map(_.copy(name = "ModifiedName")).collect.foreach(println)
     println("\nParse JSON")
-    fileRDD.map(parse).take(5).foreach(println)
+//    fileRDD.map(parse).take(5).foreach(println)
 
     // Sort
     println("\nSort")
@@ -56,6 +56,6 @@ object SparkRDDAPI {
     println("\nСамописное партицирование")
     val keyedRDD: RDD[(Int, Student)]       = studentsRDD.keyBy(_.id)
     val partitionedRDD: RDD[(Int, Student)] = keyedRDD.partitionBy(new CustomPartitioner)
-    println(partitionedRDD.map(_._1).glom().collect().map(arr => arr.mkString("|")).mkString(", "))*/
+    println(partitionedRDD.map(_._1).glom().collect().map(arr => arr.mkString("|")).mkString(", "))
   }
 }
