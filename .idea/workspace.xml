@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="04aec0af-414d-4c48-a07a-1d4e14f99536" name="Changes" comment="ADD block UDF">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="04aec0af-414d-4c48-a07a-1d4e14f99536" name="Changes" comment="ADD SparkDataFrameAPI" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -203,7 +201,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739134787186</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="ADD SparkDataFrameAPI">
+      <option name="closed" value="true" />
+      <created>1739300921015</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1739300921015</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -215,6 +221,7 @@
     <MESSAGE value="ADD NotebooksApp.scala" />
     <MESSAGE value="CHANGE pom.xml" />
     <MESSAGE value="ADD block UDF" />
-    <option name="LAST_COMMIT_MESSAGE" value="ADD block UDF" />
+    <MESSAGE value="ADD SparkDataFrameAPI" />
+    <option name="LAST_COMMIT_MESSAGE" value="ADD SparkDataFrameAPI" />
   </component>
 </project>
