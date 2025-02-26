@@ -1,7 +1,8 @@
 
-import org.apache.spark.sql.{DataFrame, SparkSession}
-import org.apache.spark.sql.functions.col
+import org.apache.spark.sql.{Column, DataFrame, SparkSession}
+import org.apache.spark.sql.functions.{col, explode}
 import org.apache.spark.sql.types.{ArrayType, StructType}
+
 import scala.io.Source
 
 
@@ -16,7 +17,8 @@ object json_to_scala_faltten {
 
     import spark.implicits._
 
-    val nestedJSON2 ="""{
+    val nestedJSON2 =
+      """{
 	"id": "0001",
 	"type": "donut",
 	"name": "Cake",
@@ -43,7 +45,8 @@ object json_to_scala_faltten {
 		]
 }"""
 
-    val nestedJSON ="""{
+    val nestedJSON =
+      """{
                    "Total_value": 3,
                    "Topic": "Example",
                    "values": [
@@ -112,9 +115,59 @@ object json_to_scala_faltten {
       }
       df
     }
+
     val FDF = flattenDataframe(flattenDF)
     FDF.show()
-    //FDF.write.format("formatType").save("/path/filename")
+
+    println("*****************************************************************")
+    // не работает - надо дорабатывать!!!
+    val flattenDF2 = spark.read.json(spark.createDataset(nestedJSON :: Nil)).toDF()
+
+    def flattenSchema(schema: StructType, fieldName: String = null) : Array[Column] = {
+      schema.fields.flatMap(f => {
+        val cols = if (fieldName == null) f.name else (fieldName + "." + f.name)
+        f.dataType match {
+          case structType: StructType => flattenSchema(structType, cols)
+          case arrayType: ArrayType => Array(explode(col(cols)))
+          case _ => Array(col(cols))
+        }
+      })
+    }
+    flattenDF2.select(flattenSchema(flattenDF2.schema) :_*).printSchema
+
   }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

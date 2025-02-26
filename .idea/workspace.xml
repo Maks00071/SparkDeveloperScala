@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="04aec0af-414d-4c48-a07a-1d4e14f99536" name="Changes" comment="ADD HomeworkLesson11">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="04aec0af-414d-4c48-a07a-1d4e14f99536" name="Changes" comment="ADD json_to_scala_flatten.scala">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/json_to_scala_faltten.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/json_to_scala_faltten.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +49,7 @@
     "Application.SparkRDDAPI$.executor": "Run",
     "Application.SparkRDDAPI.executor": "Run",
     "Application.Unnamed.executor": "Run",
-    "Application.json_to_scala_faltten.executor": "Debug",
+    "Application.json_to_scala_faltten.executor": "Run",
     "Maven.SparkDeveloperScala [install].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -230,7 +230,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739304027119</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="ADD json_to_scala_flatten.scala">
+      <option name="closed" value="true" />
+      <created>1740595906441</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1740595906441</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -244,17 +252,7 @@
     <MESSAGE value="ADD block UDF" />
     <MESSAGE value="ADD SparkDataFrameAPI" />
     <MESSAGE value="ADD HomeworkLesson11" />
-    <option name="LAST_COMMIT_MESSAGE" value="ADD HomeworkLesson11" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/src/main/scala/json_to_scala_faltten.scala</url>
-          <line>83</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="ADD json_to_scala_flatten.scala" />
+    <option name="LAST_COMMIT_MESSAGE" value="ADD json_to_scala_flatten.scala" />
   </component>
 </project>
