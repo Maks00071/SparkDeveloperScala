@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="04aec0af-414d-4c48-a07a-1d4e14f99536" name="Changes" comment="ADD SparkDataFrameAPI" />
+    <list default="true" id="04aec0af-414d-4c48-a07a-1d4e14f99536" name="Changes" comment="ADD HomeworkLesson11">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,20 +49,21 @@
     "Application.SparkRDDAPI$.executor": "Run",
     "Application.SparkRDDAPI.executor": "Run",
     "Application.Unnamed.executor": "Run",
+    "Application.json_to_scala_faltten.executor": "Debug",
     "Maven.SparkDeveloperScala [install].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.20996094",
     "project.structure.side.proportion": "0.23514852",
     "scala_project_settings_configurable.last_selected_tab_index": "0",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.scala.settings.ScalaProjectSettingsConfigurable"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.SparkDataFrameAPI">
+  <component name="RunManager" selected="Application.json_to_scala_faltten">
     <configuration name="LoadAvro" type="Application" factoryName="Application" temporary="true">
       <option name="ALTERNATIVE_JRE_PATH" value="temurin-1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -99,13 +103,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="json_to_scala_faltten" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="json_to_scala_faltten" />
+      <module name="SparkDeveloperScala" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.NotebooksApp" />
+      <item itemvalue="Application.json_to_scala_faltten" />
       <item itemvalue="Application.SparkDataFrameAPI" />
       <item itemvalue="Application.LoadAvro" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.json_to_scala_faltten" />
         <item itemvalue="Application.SparkDataFrameAPI" />
         <item itemvalue="Application.LoadAvro" />
         <item itemvalue="Application.NotebooksApp" />
@@ -209,7 +222,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739300921015</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="ADD HomeworkLesson11">
+      <option name="closed" value="true" />
+      <created>1739304027119</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1739304027119</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -222,6 +243,18 @@
     <MESSAGE value="CHANGE pom.xml" />
     <MESSAGE value="ADD block UDF" />
     <MESSAGE value="ADD SparkDataFrameAPI" />
-    <option name="LAST_COMMIT_MESSAGE" value="ADD SparkDataFrameAPI" />
+    <MESSAGE value="ADD HomeworkLesson11" />
+    <option name="LAST_COMMIT_MESSAGE" value="ADD HomeworkLesson11" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/json_to_scala_faltten.scala</url>
+          <line>83</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
